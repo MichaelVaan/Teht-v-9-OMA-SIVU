@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body style="background: url('background.jpg') no-repeat center center/cover;">
+    <div class="container">
+        <header>
+            <div class="logo">Invest<span>Hub</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Market News</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="login">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>INVEST <span>SMARTER</span></h1>
+            <p>Welcome to InvestHub, your one-stop platform for market insights, strategies, and tools to help you make informed investment decisions. Join us today and take control of your financial future.</p>
+            <a href="#" class="register-btn">Start Investing</a>
+        </main>
+        </aside>
+        <aside id="calculator" class="calculator-container">
+            <h3>Calculator</h3>
+            <input type="text" id="calc-display" readonly>
+            <div id="calc-buttons">
+                <button onclick="calculate('7')">7</button><button onclick="calculate('8')">8</button><button onclick="calculate('9')">9</button><button onclick="calculate('/')">/</button>
+                <button onclick="calculate('4')">4</button><button onclick="calculate('5')">5</button><button onclick="calculate('6')">6</button><button onclick="calculate('*')">*</button>
+                <button onclick="calculate('1')">1</button><button onclick="calculate('2')">2</button><button onclick="calculate('3')">3</button><button onclick="calculate('-')">-</button>
+                <button onclick="calculate('0')">0</button><button onclick="calculate('.')">.</button><button onclick="calculate('+')">+</button><button onclick="calculate('=')">=</button>
+                <button onclick="clearDisplay()">C</button>
+            </div>
+        </aside>
+        <div class="clocks-container">
+            <div class="clock" id="clock1">
+                <div class="hand hour"></div><div class="hand minute"></div><div class="hand second"></div>
+                <div class="number number12">12</div><div class="number number3">3</div><div class="number number6">6</div><div class="number number9">9</div>
+                <div class="label">UTC</div>
+            </div>
+            <div class="clock" id="clock2">
+                <div class="hand hour"></div><div class="hand minute"></div><div class="hand second"></div>
+                <div class="number number12">12</div><div class="number number3">3</div><div class="number number6">6</div><div class="number number9">9</div>
+                <div class="label">New York</div>
+            </div>
+            <div class="clock" id="clock3">
+                <div class="hand hour"></div><div class="hand minute"></div><div class="hand second"></div>
+                <div class="number number12">12</div><div class="number number3">3</div><div class="number number6">6</div><div class="number number9">9</div>
+                <div class="label">London</div>
+            </div>
+            <div class="clock" id="clock4">
+                <div class="hand hour"></div><div class="hand minute"></div><div class="hand second"></div>
+                <div class="number number12">12</div><div class="number number3">3</div><div class="number number6">6</div><div class="number number9">9</div>
+                <div class="label">Tokyo</div>
+            </div>
+        </div>
+        <div id="exchange-rates" class="exchange-container">
+            <h3>Currency Exchange</h3>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <label for="from-currency">From:</label>
+            <select id="from-currency">
+                <option value="">Select Currency</option>
+            </select>
+            <label for="to-currency">To:</label>
+            <select id="to-currency">
+                <option value="">Select Currency</option>
+            </select>
+            <button id="convert-button">Convert</button>
+            <div id="conversion-results" class="conversion-results"></div>
+        </div>
+<div id="crypto-ticker" class="ticker-container">
+    <p id="ticker-content">Loading cryptocurrency data...</p>
+</div>
+        <footer>
+            <p>Copyright © 2024 InvestHub. All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
